@@ -8,7 +8,7 @@ Loader PSR4PackageLoader features a recursive re-construction of a package's dir
     use getid3 as ID3;
     $MPX_ID3 = new ID3\getID3;
 
-Because the application's namespace is different from getid3, an explicit namespace reference is applied to the class being sought.  To use the loader, at the top of your application top level .php file add code similar to this example:
+Because the application's namespace is different from getid3, an explicit namespace reference is applied to the class being sought, getID3.  To use the loader, at the top of your application top level .php file add code similar to this example:
 
     require_once __DIR__.'\Libs\Kanone\Components\ClassLoader\PSR4PackageLoader.php';
     use Kanone\Component\ClassLoader\PSR4PackageLoader;
