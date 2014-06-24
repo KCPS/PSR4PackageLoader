@@ -7,8 +7,8 @@
 namespace Kanone\Component\ClassLoader;
 
 /*
- * A PSR-4 compatible class loader.  The namespace prefix is supplied for each package along with the package root directory.
- * to registration functions.  The directory sub-structure is recursively searched so as to re-create it in the loader, enabling
+ * A PSR-4 compatible class loader.  The namespace prefix is supplied for each package along with the package root directory
+ * to the registration functions.  The directory sub-structure is recursively searched so as to re-create it in the loader, enabling
  * any package class file to be found using a single namespace.
  *
  * See http://www.php-fig.org/psr/psr-4/
