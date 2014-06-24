@@ -1,7 +1,7 @@
 PSR4PackageLoader
 =================
 
-Two standalone, PSR-4 compliant class loaders for PHP libraries and packages.  KanoneClassLoader is a straightforward implementation that requires each package directory, including the root, to be registered manually.  This can be done with repeated to calls to  registerPrefix() or with a call to registerPrefixes() and supplying an array of prefix - directory pairs.  (An example of the latter is given below.)
+Two standalone, PSR-4 compliant class loaders for PHP libraries and packages.  KanoneClassLoader is a straightforward implementation that requires each package directory, including the root, to be registered manually.  This can be done with repeated to calls to registerPrefix() or with a call to registerPrefixes() and supplying an array of prefix - directory pairs.  (An example of the latter is given below.)
 
 Loader PSR4PackageLoader features a recursive re-construction of a package's directory structure.  This allows package creators to use a single namespace for their packages; the namespace is supplied as a prefix to the loader's registry, along with the package base directory.  The loader then searches under the root and maps any found directory onto the namespace prefix.  By keeping namespace proliferation to an absolute minimum, it becomes unnecessary to add namespaces to classes, static functions and constants referenced anywhere in the package.  External namespace referencing is typically only required in application code which might, for example, want to instantiate some class in a loaded package.  The following example is from an application which uses James Heinrich's getID3() media file parsing library (http://www.getid3.org/):
 
