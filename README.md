@@ -27,7 +27,7 @@ Because the application's namespace is different from getid3, an explicit namesp
     /*
      * Application code begins here.  The getid3 alias must precede the instantiation of class getID3.
      */
-The loader was developed from scratch after trials with Symfony's Psr4ClassLoader (http://symfony.com/doc/current/components/class_loader/psr4_class_loader.html) and the Framework Interoperability Group's example (https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md).  Symfony's loader has a serious design flaw, and the FIG sample loader is coded somewhat awkwardly.  Neither implements recursive descent filesytem traversal.  By automatically registering all directories under the package root, the loader much reduces code brittleness by not having to hard-code a package's directory structure in strings.
+The loader was developed from scratch after trials with Symfony's Psr4ClassLoader (http://symfony.com/doc/current/components/class_loader/psr4_class_loader.html) and the Framework Interoperability Group's example (https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md).  Symfony's loader has a serious design flaw, and the FIG sample loader is coded somewhat awkwardly.  Neither implements recursive descent filesystem traversal.  By automatically registering all directories under the package root, the loader much reduces code brittleness by not having to hard-code a package's directory structure in strings.
 
 
     
